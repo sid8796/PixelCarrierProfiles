@@ -1,0 +1,45 @@
+canonical_name: "mts_ru"
+version: 2
+apns {
+  apn {
+    name: "MTS RU Internet"
+    value: "internet.mts.ru"
+    type: DEFAULT
+    type: SUPL
+    user: "mts"
+    password: "mts"
+    authtype: 1
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+  }
+  apn {
+    name: "MTS RU MMS"
+    value: "mms.mts.ru"
+    type: MMS
+    user: "mts"
+    password: "mts"
+    authtype: 1
+    mmsc: "http://mmsc"
+    mmsc_proxy: "192.168.192.192"
+    mmsc_proxy_port: "8080"
+    protocol: IP
+    roaming_protocol: IP
+  }
+  apn {
+    name: "MTS RU IMS"
+    value: "ims"
+    type: IMS
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+    user_visible: false
+  }
+}
+configs {
+  config { key: "carrier_volte_available_bool" bool_value: true }
+  config { key: "carrier_wfc_ims_available_bool" bool_value: true }
+  config { key: "carrier_vt_available_bool" bool_value: true }
+  config { key: "show_4g_for_lte_data_icon_bool" bool_value: true }
+  config { key: "hide_lte_plus_data_icon_bool" bool_value: false }
+  config { key: "imssms.sms_over_ims_supported_bool" bool_value: true }
+  config { key: "carrier_ussd_method_int" int_value: 1 }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "mts_by",
+  "version": 1,
+  "status": "structure_validated_network_untested_not_in_apk",
+  "operator_binding": {
+    "source_mccmnc": "25702",
+    "target_mccmnc": "25702",
+    "carrier_id": 569,
+    "enforcement": "Application must validate the selected SIM; the payload itself does not enforce MCC/MNC."
+  },
+  "carrier_config": {
+    "carrier_volte_available_bool": true,
+    "carrier_wfc_ims_available_bool": false,
+    "show_4g_for_lte_data_icon_bool": true,
+    "hide_lte_plus_data_icon_bool": false,
+    "carrier_ussd_method_int": 1,
+    "carrier_supports_ss_over_ut_bool": true,
+    "xcap_apn_name_string": "xcap",
+    "imsss.ut_as_server_fqdn_string": "xcap.ims.mnc002.mcc257.pub.3gppnetwork.org",
+    "bsf.bsf_server_fqdn_string": "bsf.mnc002.mcc257.pub.3gppnetwork.org",
+    "imsss.ut_as_server_port_int": 80,
+    "bsf.bsf_server_port_int": 8080
+  },
+  "apns": [
+    {
+      "name": "MTS BY Internet",
+      "type": [
+        "default",
+        "supl"
+      ],
+      "apn": "mts",
+      "user": "mts",
+      "password": "mts",
+      "authtype": 1
+    },
+    {
+      "name": "MTS BY MMS",
+      "type": [
+        "mms"
+      ],
+      "mmsc": "http://mmsc",
+      "mmsproxy": "192.168.192.168",
+      "mmsport": 8080,
+      "apn": "mts",
+      "user": "mts",
+      "password": "mts",
+      "authtype": 1
+    },
+    {
+      "name": "MTS BY IMS",
+      "apn": "ims",
+      "type": [
+        "ims"
+      ],
+      "authtype": -1,
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false,
+      "bearer_bitmask": "14|18|20",
+      "origin": "Added as requested using the existing A1 IMS APN shape; Samsung MTS IMS profile confirms pdn=ims."
+    },
+    {
+      "name": "MTS BY XCAP",
+      "apn": "xcap",
+      "type": [
+        "xcap"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6"
+    }
+  ],
+  "sources": [
+    "Samsung-A576B-Belarus/Belarus/Belarus-apns-conf.xml",
+    "Samsung-A576B-Belarus/Belarus/globalsettings-Belarus.json",
+    "Samsung-A576B-Belarus/Belarus/imsprofile-Belarus.json",
+    "Xiaomi-nezha-Belarus/Belarus/mbn/mts_by/settings-excerpt.txt"
+  ]
+}

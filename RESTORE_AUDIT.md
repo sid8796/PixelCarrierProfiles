@@ -1,0 +1,15 @@
+# Selected-subscription restore, 2.11
+
+User explicitly requested two buttons and clarified that restore must change the phone, not merely draft fields. APN work remains frozen.
+
+The reviewed Carrier IMS source is the existing cached ImsModifier.kt at commit 4312b5a9244a20444cccf5c4a5f763f6fd9d2ab5 (package io.github.vvb2060.ims.mod, version 3.9.1.r107.4312b5a9 / 107). Its reset branch removes select_sim_id/reset, calls applyOverrideConfig(values=null, preferPersistent=false), then clearCarrierTestOverride(selectedSubId). The clear helper uses the clear method when present; otherwise it resolves active SubscriptionInfo MCC/MNC and uses setCarrierTestOverride. It can skip the fallback without reporting a failure if identity cannot be resolved. Therefore UI only reports the modifier response, not verified restoration. A reset can affect APN indirectly via carrier configuration; no APN provider command is involved.
+
+RegionPlan adds optional reset:Boolean=false for old JSON/Bundle compatibility; malformed present values are rejected. A reset plan is valid only with destination MCC/MNC equal to observed source values. The mode participates in exact plan equality, persisted intent, helper echo validation and per-slot history. RegionActionRules generates only two keys for reset: select_sim_id:Int>=0 and reset:Boolean=true; no country overrides, sentinel -1, component or shell command are caller supplied. Normal mode retains the original three-key payload and leading zeros.
+
+Restore uses the existing CarrierTrialService implementation in a separate Shizuku tag sim-region-carrier-restore/version 1/process suffix restore. Normal apply and inspection retain sim-region-a1-trial/version 3, preserving old pending requests rather than forcing a normal helper restart. The app caches the bridge together with its mode. Both modes retain the original single request gate, strict app/helper mapping checks, effective-config snapshot, durable apply intent, observer and single-use ticket. No generic reset endpoint is exported; apply still accepts only the prepared ticket.
+
+UI may show confirmation automatically only after an explicit click initiated preparation, the activity is visible, the selected mode/plan still matches, and the ticket is ready. Leaving the activity clears that UI-only intent. It never automatically sends apply. User confirmation checks the current matching plan again. Neither mode is automatically replayed after restart, late-result inspection, selection or color/theme changes.
+
+532 JVM cases include 20 added tests for restore validation, mode/ticket mismatch, mapping, typed exact argument keys, no all-SIM selection, SIM 2 targeting and normal leading-zero preservation. Android Bundle/Binder behavior and actual phone reset are not exercised by these JVM cases. AIDL is unchanged. The dedicated read-only/number and APN backend files are unchanged.
+
+TRIAL_AUDIT.md is historical (2.8/2.9); this document supersedes its no-reset statement for the new, explicitly scoped reset mode. No radio reset, default-APN reset, APN record update or boot automation was added.

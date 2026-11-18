@@ -1,0 +1,15 @@
+**/.gradle/
+**/.kotlin/
+**/build/
+local.properties
+*.keystore
+*.jks
+*.pfx
+*.pem
+*.key
+*.apk
+*.aab
+*.idsig
+*.log
+.env
+.env.*

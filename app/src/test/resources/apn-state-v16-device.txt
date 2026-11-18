@@ -1,0 +1,6 @@
+Row: 0 _id=399, apn=internet, sub_id=3, type=default,supl, authtype=1, mmsc=, protocol=IPV4V6, roaming_protocol=IPV4V6, bearer_bitmask=0, user_visible=1, user_editable=1, carrier_enabled=1, owned_by=1, carrier_id=568, mvno_type=
+Row: 1 _id=400, apn=mms, sub_id=3, type=mms, authtype=1, mmsc=http://mmsc, protocol=IPV4V6, roaming_protocol=IPV4V6, bearer_bitmask=0, user_visible=1, user_editable=1, carrier_enabled=1, owned_by=1, carrier_id=568, mvno_type=
+Row: 2 _id=401, apn=ims, sub_id=3, type=ims, authtype=-1, mmsc=, protocol=IPV4V6, roaming_protocol=IPV4V6, bearer_bitmask=663552, user_visible=0, user_editable=1, carrier_enabled=1, owned_by=1, carrier_id=568, mvno_type=
+Row: 3 _id=402, apn=xcap, sub_id=3, type=xcap, authtype=-1, mmsc=, protocol=IPV4V6, roaming_protocol=IPV4V6, bearer_bitmask=0, user_visible=1, user_editable=1, carrier_enabled=1, owned_by=1, carrier_id=568, mvno_type=
+Row: 4 _id=410, apn=web.velcom.by, sub_id=2, type=default,supl, authtype=1, mmsc=, protocol=IP, roaming_protocol=IP, bearer_bitmask=0, user_visible=1, user_editable=1, carrier_enabled=1, owned_by=1, carrier_id=-1, mvno_type=
+Row: 5 _id=411, apn=mms.velcom.by, sub_id=2, type=mms, authtype=1, mmsc=http://mmsc, protocol=IP, roaming_protocol=IP, bearer_bitmask=0, user_visible=1, user_editable=1, carrier_enabled=1, owned_by=1, carrier_id=-1, mvno_type=

@@ -1,0 +1,58 @@
+canonical_name: "beeline_ru"
+version: 1
+apns {
+  apn {
+    name: "Beeline RU Internet"
+    value: "internet.beeline.ru"
+    type: DEFAULT
+    type: SUPL
+    user: "beeline"
+    password: "beeline"
+    authtype: 1
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+  }
+  apn {
+    name: "Beeline RU MMS"
+    value: "mms.beeline.ru"
+    type: MMS
+    user: "beeline"
+    password: "beeline"
+    authtype: 1
+    mmsc: "http://mms/"
+    mmsc_proxy: "192.168.94.23"
+    mmsc_proxy_port: "8080"
+    protocol: IP
+    roaming_protocol: IP
+  }
+  apn {
+    name: "Beeline RU IMS"
+    value: "ims"
+    type: IMS
+    protocol: IP
+    roaming_protocol: IP
+    user_visible: false
+  }
+  apn {
+    name: "Beeline RU XCAP"
+    value: "xcap.beeline.ru"
+    type: XCAP
+    protocol: IPV4V6
+    roaming_protocol: IPV4V6
+    user_visible: false
+  }
+}
+configs {
+  config { key: "carrier_volte_available_bool" bool_value: true }
+  config { key: "carrier_wfc_ims_available_bool" bool_value: true }
+  config { key: "carrier_supports_ss_over_ut_bool" bool_value: true }
+  config { key: "show_4g_for_lte_data_icon_bool" bool_value: true }
+  config { key: "hide_lte_plus_data_icon_bool" bool_value: false }
+  config { key: "imssms.sms_over_ims_supported_bool" bool_value: true }
+  config { key: "carrier_ussd_method_int" int_value: 1 }
+  config { key: "imsss.ut_as_server_port_int" int_value: 81 }
+  config { key: "xcap_apn_name_string" text_value: "xcap.beeline.ru" }
+  config { key: "imsss.ut_as_server_fqdn_string" text_value: "xcap.ims.mnc099.mcc250.pub.3gppnetwork.org" }
+  config { key: "bsf.bsf_server_fqdn_string" text_value: "bsf.mnc099.mcc250.pub.3gppnetwork.org" }
+  config { key: "default_vm_number_string" text_value: "600" }
+}

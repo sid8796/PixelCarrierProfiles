@@ -1,0 +1,85 @@
+{
+  "id": "t2_ru",
+  "version": 1,
+  "operator_binding": {
+    "source_mccmnc": "25020",
+    "target_mccmnc": "25020",
+    "carrier_id": 1028
+  },
+  "experimental": true,
+  "status": "experimental_network_untested",
+  "carrier_config": {
+    "carrier_volte_available_bool": true,
+    "carrier_wfc_ims_available_bool": true,
+    "carrier_vt_available_bool": true,
+    "carrier_supports_ss_over_ut_bool": true,
+    "show_4g_for_lte_data_icon_bool": true,
+    "hide_lte_plus_data_icon_bool": false,
+    "imssms.sms_over_ims_supported_bool": true,
+    "carrier_ussd_method_int": 1,
+    "imsss.ut_as_server_port_int": 80,
+    "bsf.bsf_server_port_int": 80,
+    "xcap_apn_name_string": "hos",
+    "imsss.ut_as_server_fqdn_string": "xcap.ims.mnc020.mcc250.pub.3gppnetwork.org",
+    "bsf.bsf_server_fqdn_string": "bsf.ims.mnc020.mcc250.pub.3gppnetwork.org"
+  },
+  "apns": [
+    {
+      "name": "T2 RU Internet",
+      "apn": "internet",
+      "type": [
+        "default"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6"
+    },
+    {
+      "name": "T2 RU MMS",
+      "apn": "mms",
+      "type": [
+        "mms"
+      ],
+      "mmsc": "http://mms",
+      "mmsproxy": "193.12.40.65",
+      "mmsport": "8080",
+      "protocol": "IP",
+      "roaming_protocol": "IP"
+    },
+    {
+      "name": "T2 RU IMS",
+      "apn": "ims",
+      "type": [
+        "ims"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    },
+    {
+      "name": "T2 RU XCAP",
+      "apn": "hos",
+      "type": [
+        "xcap"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    }
+  ],
+  "sha256": "8bdfb462bf3096caddfb47b7449d3171ac36f861f39025edab71963bd8d8c12a",
+  "sources": [
+    "Samsung A576B TELE2_RU globalsettings/imsswitch/imsprofile and SER T2 customer.xml",
+    "Xiaomi OS3.0.308.0.WPARUXM product/system APNs and default_v2.9.7.xml 25020",
+    "Xiaomi Tele2 MBN strings: XCAP FQDN:80; BSF alternative FQDN:80; static ePDG disabled"
+  ],
+  "decisions": {
+    "apns": "Samsung short APNs internet/mms/ims/hos, agreeing with Xiaomi product for first three. Xiaomi system instead has internet.tele2.ru/mms.tele2.ru/ims.tele2.ru/hos.tele2.ru. Do not merge the sets.",
+    "authentication": "No user/password. APN auth left unspecified as in Xiaomi product; Samsung MMS Auth=normal exists in its HTTP profile but no credentials.",
+    "bsf": "Samsung bsf.ims.mnc020.mcc250.pub.3gppnetwork.org selected. Xiaomi differs: bsf.mnc020.mcc250.pub.3gppnetwork.org:80. Samsung inherited default port 80, also present in Xiaomi.",
+    "ut": "Samsung PS_ONLY_VOLTEREGIED; UT flag and hos APN experimental on Pixel. XCAP host agrees with Xiaomi MBN; port 80 from Xiaomi and Samsung generic defaults.",
+    "video": "Samsung Vilte=true and mmtel-video; Xiaomi carrier_vt_available_bool=true. Configuration flag only.",
+    "epdg": "No static override: Xiaomi static_fqdn_enabled=FALSE and no FQDN.",
+    "voicemail": "System default, not researched.",
+    "cleanup": "Existing provider APNs not deleted; MVNO-specific APNs not imported."
+  }
+}

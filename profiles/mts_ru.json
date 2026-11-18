@@ -1,0 +1,75 @@
+{
+  "id": "mts_ru",
+  "version": 2,
+  "operator_binding": {
+    "source_mccmnc": "25001",
+    "target_mccmnc": "25001",
+    "carrier_id": 1678
+  },
+  "status": "experimental_network_untested",
+  "carrier_config": {
+    "carrier_volte_available_bool": true,
+    "carrier_wfc_ims_available_bool": true,
+    "carrier_vt_available_bool": true,
+    "show_4g_for_lte_data_icon_bool": true,
+    "hide_lte_plus_data_icon_bool": false,
+    "imssms.sms_over_ims_supported_bool": true,
+    "carrier_ussd_method_int": 1
+  },
+  "apns": [
+    {
+      "name": "MTS RU Internet",
+      "apn": "internet.mts.ru",
+      "type": [
+        "default",
+        "supl"
+      ],
+      "user": "mts",
+      "password": "mts",
+      "authtype": 1,
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6"
+    },
+    {
+      "name": "MTS RU MMS",
+      "apn": "mms.mts.ru",
+      "type": [
+        "mms"
+      ],
+      "user": "mts",
+      "password": "mts",
+      "authtype": 1,
+      "mmsc": "http://mmsc",
+      "mmsproxy": "192.168.192.192",
+      "mmsport": "8080",
+      "protocol": "IP",
+      "roaming_protocol": "IP"
+    },
+    {
+      "name": "MTS RU IMS",
+      "apn": "ims",
+      "type": [
+        "ims"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    }
+  ],
+  "sha256": "ef72eccc076d23eaeec5314e558fae66238383aeeae62c8fa909ca447a88f13b",
+  "sources": [
+    "Xiaomi OS3.0.308.0.WPARUXM system/product APN databases",
+    "Xiaomi MiuiCarrierConfigOverlay default_v2.9.7.xml MCC250 MNC01",
+    "Pixel others.pb 25001 APN credentials/type cross-check",
+    "Samsung A576B MTS_RU: enableServiceSmsip=true, ussd_domain_setting=PSCS, support_3gpp_ussi=true"
+  ],
+  "decisions": {
+    "internet_protocol": "IPV4V6 at home and roaming from Xiaomi product; PAP and mts/mts from Xiaomi system, matching Pixel others.pb",
+    "mms_protocol": "IP at home and roaming from Xiaomi product; credentials from Xiaomi system, matching Pixel others.pb",
+    "ims": "Xiaomi system: dual stack and hidden; no bearer restriction or auth override",
+    "icons": "4G/4G+ presentation consistent with existing app profiles",
+    "xcap": "No separate APN/server added; not found in extracted RU text settings",
+    "ussd_nr_and_modem": "USSD IMS-preferred with CS fallback. SMS over IMS enabled experimentally. NR and modem defaults retained."
+  },
+  "experimental": true
+}

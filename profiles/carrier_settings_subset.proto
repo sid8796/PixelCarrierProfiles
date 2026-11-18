@@ -1,0 +1,33 @@
+syntax = "proto2";
+message CarrierSettings {
+ optional string canonical_name = 1;
+ optional int64 version = 2;
+ optional CarrierApns apns = 3;
+ optional CarrierConfig configs = 4;
+}
+message CarrierApns { repeated ApnItem apn = 2; }
+message ApnItem {
+ optional string name = 1;
+ optional string value = 2;
+ enum ApnType { ALL=0; DEFAULT=1; MMS=2; SUPL=3; IMS=7; XCAP=11; }
+ repeated ApnType type = 3;
+ optional string bearer_bitmask = 4 [default="0"];
+ optional string user = 8;
+ optional string password = 9;
+ optional int32 authtype = 10 [default=-1];
+ optional string mmsc = 11;
+ optional string mmsc_proxy = 12;
+ optional string mmsc_proxy_port = 13;
+ enum Protocol { IP=0; IPV6=1; IPV4V6=2; PPP=3; }
+ optional Protocol protocol = 14 [default=IP];
+ optional Protocol roaming_protocol = 15 [default=IP];
+ optional bool user_visible = 23 [default=true];
+ optional bool user_editable = 24 [default=true];
+}
+message CarrierConfig { repeated Config config = 2; }
+message Config {
+ optional string key = 1;
+ oneof value { string text_value = 2; int32 int_value = 3; bool bool_value = 5; IntArray int_array = 7; }
+}
+
+message IntArray { repeated int32 value = 1; }

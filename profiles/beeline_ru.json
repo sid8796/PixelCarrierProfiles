@@ -1,0 +1,88 @@
+{
+  "id": "beeline_ru",
+  "version": 1,
+  "operator_binding": {
+    "source_mccmnc": "25099",
+    "target_mccmnc": "25099",
+    "carrier_id": 1681
+  },
+  "experimental": true,
+  "status": "experimental_network_untested",
+  "carrier_config": {
+    "carrier_volte_available_bool": true,
+    "carrier_wfc_ims_available_bool": true,
+    "carrier_supports_ss_over_ut_bool": true,
+    "show_4g_for_lte_data_icon_bool": true,
+    "hide_lte_plus_data_icon_bool": false,
+    "imssms.sms_over_ims_supported_bool": true,
+    "carrier_ussd_method_int": 1,
+    "imsss.ut_as_server_port_int": 81,
+    "xcap_apn_name_string": "xcap.beeline.ru",
+    "imsss.ut_as_server_fqdn_string": "xcap.ims.mnc099.mcc250.pub.3gppnetwork.org",
+    "bsf.bsf_server_fqdn_string": "bsf.mnc099.mcc250.pub.3gppnetwork.org",
+    "default_vm_number_string": "600"
+  },
+  "apns": [
+    {
+      "name": "Beeline RU Internet",
+      "apn": "internet.beeline.ru",
+      "type": [
+        "default",
+        "supl"
+      ],
+      "user": "beeline",
+      "password": "beeline",
+      "authtype": 1,
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6"
+    },
+    {
+      "name": "Beeline RU MMS",
+      "apn": "mms.beeline.ru",
+      "type": [
+        "mms"
+      ],
+      "user": "beeline",
+      "password": "beeline",
+      "authtype": 1,
+      "mmsc": "http://mms/",
+      "mmsproxy": "192.168.94.23",
+      "mmsport": "8080",
+      "protocol": "IP",
+      "roaming_protocol": "IP"
+    },
+    {
+      "name": "Beeline RU IMS",
+      "apn": "ims",
+      "type": [
+        "ims"
+      ],
+      "protocol": "IP",
+      "roaming_protocol": "IP",
+      "user_visible": false
+    },
+    {
+      "name": "Beeline RU XCAP",
+      "apn": "xcap.beeline.ru",
+      "type": [
+        "xcap"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    }
+  ],
+  "sha256": "7b734981e455060a601a55d39136e5257f029712c6cb89d6eed30038b22fefc6",
+  "sources": [
+    "Xiaomi OS3.0.308.0.WPARUXM APN databases and default_v2.9.7.xml 25099",
+    "Samsung A576B Beeline_RU globalsettings, imsswitch, imsprofile and SER customer.xml",
+    "https://kareliya.beeline.ru/customers/products/mobile/services/details/avtootvetchik/"
+  ],
+  "decisions": {
+    "ims": "IPv4 from Xiaomi product and Samsung IMS profile; hidden from Xiaomi system. Samsung customer APN instead specifies dual stack.",
+    "ut": "XCAP APN and FQDN/port 81 from Samsung. BSF port not overridden. Requires IMS registration policy left at platform default.",
+    "video": "No VT override: absent in Beeline-specific Samsung switch/profile and examined Xiaomi override.",
+    "voicemail": "600 from official service page; older instructions use 0600. Network validation required.",
+    "cleanup": "No deletion of existing Beeline/provider APNs. Other SIMs unchanged."
+  }
+}

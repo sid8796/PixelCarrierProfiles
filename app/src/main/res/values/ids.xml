@@ -1,0 +1,9 @@
+<resources>
+    <item name="sim_one" type="id" />
+    <item name="sim_two" type="id" />
+    <item name="mcc" type="id" />
+    <item name="mnc" type="id" />
+  <item name="region_mcc" type="id" />
+  <item name="region_mnc" type="id" />
+</resources>
+

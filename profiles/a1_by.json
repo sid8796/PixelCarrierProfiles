@@ -1,0 +1,69 @@
+{
+  "name": "a1_by",
+  "version": 16,
+  "target_mcc": "257",
+  "target_mnc": "01",
+  "carrier_config": {
+    "carrier_volte_available_bool": true,
+    "carrier_wfc_ims_available_bool": true,
+    "carrier_supports_ss_over_ut_bool": true,
+    "show_4g_for_lte_data_icon_bool": true,
+    "carrier_ussd_method_int": 1,
+    "hide_lte_plus_data_icon_bool": false,
+    "carrier_vt_available_bool": true,
+    "imsss.ut_as_server_fqdn_string": "xcap.ims.mnc001.mcc257.pub.3gppnetwork.org",
+    "xcap_apn_name_string": "xcap",
+    "bsf.bsf_server_fqdn_string": "bsf.ims.mnc001.mcc257.pub.3gppnetwork.org",
+    "bsf.bsf_server_port_int": 8080,
+    "vendor.ims.carrier_video_over_lte_bool": true,
+    "default_vm_number_string": "+375296000200",
+    "carrier_default_wfc_ims_enabled_bool": false
+  },
+  "apns": [
+    {
+      "name": "A1 BY Internet",
+      "apn": "internet",
+      "type": [
+        "default",
+        "supl"
+      ],
+      "authtype": 1,
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_editable": false
+    },
+    {
+      "name": "A1 BY MMS",
+      "apn": "mms",
+      "type": [
+        "mms"
+      ],
+      "authtype": 1,
+      "mmsc": "http://mmsc",
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_editable": false
+    },
+    {
+      "name": "A1 BY IMS",
+      "apn": "ims",
+      "type": [
+        "ims"
+      ],
+      "bearer_bitmask": "14|18|20",
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    },
+    {
+      "name": "A1 BY XCAP",
+      "apn": "xcap",
+      "type": [
+        "xcap"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    }
+  ]
+}

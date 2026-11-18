@@ -1,0 +1,1 @@
+PASS: 2265 generated catalog entries match archive manifest; 629 standalone profiles, others/default/no_sim excluded; archive SHA256 verified. Settings experimental entry removed.

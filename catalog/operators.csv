@@ -1,0 +1,117 @@
+﻿country,operator,mcc,mnc,aosp_matches,checked_on
+Австралия,Telstra,505,01,Telstra | ALDI mobile | Belong | Telechoice | Woolworths | NuMobile | Boost | mate. | Exetel | Konec | More | TANGERINE | Your provider | Southern | Everyday,2026-10-24
+Австралия,Optus,505,02,Optus | Virgin,2026-10-24
+Австралия,Vodafone,505,03,Vodafone,2026-10-24
+Австрия,A1,232,01,A1,2026-10-24
+Австрия,Magenta,232,03,Magenta Telekom | Goodspeed | Magenta Telekom,2026-10-24
+Австрия,Drei,232,05,Drei,2026-10-24
+Бельгия,Proximus,206,01,Virgin | Proximus | EURO INFORMATION TELECOM | IIJmio | Telenet | Virgin Media Ireland | Telnyx,2026-10-24
+Бельгия,Orange,206,10,Orange | Transatel,2026-10-24
+Бельгия,BASE / Telenet,206,20,Virgin | BASE,2026-10-24
+Великобритания,EE,234,30,EE | Virgin | EE | BT | BT Business | BT One Phone | Lycamobile,2026-10-24
+Великобритания,O2,234,10,O2 | Manx Telecom | Tesco | TalkTalk | giffgaff | Jump | Travelfy | Webbing | 1Global | o2prepaid_gb,2026-10-24
+Великобритания,Vodafone,234,15,Vodafone | Sainsbury's | Lebara | TalkMobile | ASDA GB | eSIM Go,2026-10-24
+Великобритания,Three,234,20,Three Mobile | Google Fi | Smarty | Superdrug | iD Mobile | Google Fi-3UK,2026-10-24
+Венгрия,Magyar Telekom,216,30,Magyar Telekom | Magyar Telekom,2026-10-24
+Венгрия,Yettel,216,01,Yettel,2026-10-24
+Венгрия,One (бывш. Vodafone),216,70,Vodafone,2026-10-24
+Германия,Telekom,262,01,Telekom | congstar | Debitel | Telekom | fraenk,2026-10-24
+Германия,Vodafone,262,02,Vodafone | EWE | Vodafone,2026-10-24
+Германия,O2,262,07,O2 | Fonic Prepaid | Tchibo | O2 | 1&1 | o2prepaid_de,2026-10-24
+Германия,O2 (бывш. E-Plus),262,03,O2 | O2 | Voiceworks DE | 1&1,2026-10-24
+Дания,TDC / YouSee,238,01,TDC Mobil | Telmore | GigSky,2026-10-24
+Дания,Telenor,238,02,Telenor,2026-10-24
+Дания,3,238,06,3,2026-10-24
+Дания,Norlys (бывш. Telia),238,20,Telia | Call Me | DLG Tele,2026-10-24
+Индия,Airtel · Карнатака,404,45,Airtel,2026-10-24
+Индия,Vi · Карнатака,404,86,Vi | Vi,2026-10-24
+Ирландия,Vodafone,272,01,Vodafone | Vodafone,2026-10-24
+Ирландия,eir,272,03,Meteor Mobile Communications Ltd.,2026-10-24
+Ирландия,Three,272,05,3,2026-10-24
+Испания,Movistar,214,07,Movistar | Mettel,2026-10-24
+Испания,Vodafone,214,01,Vodafone,2026-10-24
+Испания,Orange,214,03,Orange | Euskaltel | Jazztel | Euskaltel | mobilR | Simyo | Carrefour | Happy | RACC | CABLE movil | Ibercom | Orange,2026-10-24
+Испания,Yoigo,214,04,Yoigo,2026-10-24
+Италия,TIM,222,01,TIM | AT&T MX | Noverca | GigSky | HMD Connect Pro | Telnyx | Webbing,2026-10-24
+Италия,Vodafone,222,10,Vodafone | PosteMobile | ERG | Daily Telecom Mobile | homobile_it,2026-10-24
+Италия,WINDTRE,222,88,WINDTRE | VERY,2026-10-24
+Италия,Iliad,222,50,Iliad,2026-10-24
+Канада,Rogers,302,720,Rogers | Chatr Mobile | Ztar Mobile | Cityfone | Tbaytel | Rogers 5G,2026-10-24
+Канада,Bell,302,610,Bell Mobility | Virgin Mobile Canada | PC mobile | Solo Mobile | Lucky Mobile | pcmobile_prepaid_bell,2026-10-24
+Канада,TELUS,302,220,TELUS Mobility | Koodo Mobile | PC mobile | Public Mobile | Mobi | Home | Boost | Republic | Ting | Project Genesis | Boost | Boost | Boost | Project Genesis | Republic | Ting | Gen Mobile | Gen Mobile | Boost | Boost | Popcorn | pcmobile_postpaid_telus,2026-10-24
+Канада,Freedom Mobile,302,490,Freedom Mobile | Shaw Mobile,2026-10-24
+Латвия,LMT,247,01,LMT,2026-10-24
+Латвия,Tele2,247,02,Tele2/ZZ,2026-10-24
+Латвия,Bite,247,05,Bite,2026-10-24
+Литва,Telia,246,01,Telia,2026-10-24
+Литва,Bite,246,02,BITĖ,2026-10-24
+Литва,Tele2,246,03,Tele2,2026-10-24
+Малайзия,Maxis,502,12,Maxis/Hotlink,2026-10-24
+Малайзия,CelcomDigi · Celcom,502,13,Celcom,2026-10-24
+Малайзия,CelcomDigi · Digi,502,16,Digi,2026-10-24
+Малайзия,U Mobile,502,18,U Mobile,2026-10-24
+Мексика,Telcel,334,020,Telcel,2026-10-24
+Мексика,Movistar,334,030,Movistar,2026-10-24
+Мексика,AT&T,334,050,AT&T MX,2026-10-24
+Мексика,AT&T (другой PLMN),334,090,AT&T MX,2026-10-24
+Нидерланды,KPN,204,08,KPN Mobiel | Truphone | Voiceworks NL | Rabo Mobiel Int. | 1Global,2026-10-24
+Нидерланды,Vodafone,204,04,Vodafone | Sask Tel Mobility | C Spire | Verizon Wireless | U.S. Cellular | Hot Mobile | Jump | Truphone | China Telecom | Webbing | 1Global | Lum | C Spire-NL | CTC Telecom Inc,2026-10-24
+Нидерланды,Odido,204,16,Odido | Ben | Odido | Simpel,2026-10-24
+Норвегия,Telenor,242,01,Telenor | Ventelo,2026-10-24
+Норвегия,Telia,242,02,Telia | Chess,2026-10-24
+Норвегия,ice,242,14,Ice Norway,2026-10-24
+Польша,Plus,260,01,Plus | DENT,2026-10-24
+Польша,T-Mobile,260,02,T-Mobile | T-Mobile,2026-10-24
+Польша,Orange,260,03,Orange | DENT,2026-10-24
+Польша,Play,260,06,PLAY | DENT,2026-10-24
+Польша,Lycamobile,260,09,Telekomunikacja Kolejowa (GSM-R) | Lycamobile,2026-10-24
+Португалия,Vodafone,268,01,Vodafone,2026-10-24
+Португалия,NOS,268,03,NOS,2026-10-24
+Португалия,MEO,268,06,MEO,2026-10-24
+Румыния,Vodafone,226,01,Vodafone | Vodafone,2026-10-24
+Румыния,Orange,226,10,Orange,2026-10-24
+Румыния,Digi,226,05,Digi.Mobil | Digi Spain | Digi Italy,2026-10-24
+США,T-Mobile,310,260,T-Mobile - US | MetroPCS | Google Fi | TracFone | Consumer Cellular | Red Pocket | Kore | Amaysim (MVNE2) | Bright Spot (Leto) | GoSmart | IDT | Kajeet (Arterra) | Lyca Mobile | M2M | Nest | Plintron | PWG/Cintex | Ready Wireless | Republic Wireless (MVNE2) | Roam Mobility | Rock Island | Solavei | Ting | Twilio M2M | Ultra/Univision | Vodafone US | Wyless | iWireless | Qlink | Tello | DENT | Tracfone-TMO | Red Pocket-TMO | Google Fi-TMO | Consumer Cellular TMO,2026-10-24
+США,T-Mobile (другой PLMN),310,240,"T-Mobile - US | MetroPCS | Boost | Google Fi | TracFone | Lyca Mobile | Plintron | PWG/Cintex | Republic Wireless (MVNE2) | Ultra/Univision | Assurance Wireless | Boost | Republic - MVNO1 | Ting | U+264A | iWireless | Qlink | Tello | DENT | Gen Mobile | Boost | Nova Labs, Inc. | Optimum | Tracfone-TMO | Google Fi-TMO | U+264A-TMO",2026-10-24
+США,AT&T,310,410,AT&T | TracFone | Consumer Cellular | Locus Telecom | Telrite/Pure Talk | Red Pocket | Airvoice | Ztar | Defense Mobile | Kore | Boost | Gen Mobile | Republic | Boost | Home | Project Genesis | MVNx #T | Gen Mobile | Boost | Boost | Republic | Ting | Ting | AT&T Private | Tracfone-ATT | Red Pocket-ATT | AT&T 5G | Consumer Cellular ATT | AT&T 5G SA,2026-10-24
+Сингапур,Singtel,525,01,Singtel,2026-10-24
+Сингапур,M1,525,03,M1,2026-10-24
+Сингапур,StarHub,525,05,StarHub | giga_sg | Travelfy,2026-10-24
+Сингапур,SIMBA,525,10,SIMBA,2026-10-24
+Словакия,Orange,231,01,Orange,2026-10-24
+Словакия,Slovak Telekom,231,02,Slovak Telekom | Slovak Telekom,2026-10-24
+Словакия,O2,231,06,O2,2026-10-24
+Словакия,4ka,231,03,4ka SK,2026-10-24
+Словения,A1,293,40,SI Mobil,2026-10-24
+Словения,Telekom Slovenije,293,41,Telekom Slovenije,2026-10-24
+Словения,T-2,293,64,T-2 d.o.o.,2026-10-24
+Словения,Telemach,293,70,Telemach,2026-10-24
+Тайвань,Chunghwa Telecom,466,92,中華電信_Chunghwa Telecom,2026-10-24
+Тайвань,Far EasTone,466,01,遠傳電信 Far EasTone Telecom | 遠傳電信Far EasTone Telecom(原亞太電信),2026-10-24
+Тайвань,Taiwan Mobile,466,97,台灣大哥大 Taiwan Mobile Telecom,2026-10-24
+Финляндия,Elisa,244,05,Elisa,2026-10-24
+Финляндия,DNA,244,12,DNA,2026-10-24
+Финляндия,Telia,244,91,Telia,2026-10-24
+Франция,Orange,208,01,Orange | EURO INFORMATION TELECOM | Carrefour | Coriolis | Syma Mobile | 1&1 | Orange MVNOs | Webbing | Mettel,2026-10-24
+Франция,SFR,208,10,SFR | Coriolis | Auchan | Reglo | La Poste | Darty | Keyyo | Zero forfait | Coriolis ESP,2026-10-24
+Франция,Bouygues Telecom,208,20,Bouygues Telecom,2026-10-24
+Франция,Free Mobile,208,15,Free | Iliad | Free RE,2026-10-24
+Чехия,T-Mobile,230,01,T-Mobile | T-Mobile,2026-10-24
+Чехия,O2,230,02,O2,2026-10-24
+Чехия,Vodafone,230,03,Vodafone | Vodafone,2026-10-24
+Швейцария,Swisscom,228,01,Swisscom | Swisscom,2026-10-24
+Швейцария,Sunrise,228,02,Sunrise,2026-10-24
+Швейцария,Salt,228,03,Salt | Transatel,2026-10-24
+Швеция,Telia,240,01,Telia Sverige AB | Halebop,2026-10-24
+Швеция,3,240,02,3 (Hi3G Access AB),2026-10-24
+Швеция,Tele2,240,07,Tele2/Comviq Sverige/Com Hem | Sky | GigSky | Spusu AT | HELP mobile AT | Tchibo mobil AT | Spusu IT | Spusu GB | Spusu CH | Sky IE,2026-10-24
+Швеция,Telenor,240,08,Telenor Sverige AB,2026-10-24
+Эстония,Telia,248,01,Telia | Send,2026-10-24
+Эстония,Elisa,248,02,Elisa,2026-10-24
+Эстония,Tele2,248,03,Tele2,2026-10-24
+Япония,NTT docomo,440,10,NTT DOCOMO | IIJmio | Rakuten Mobile | Ratel | mineo | BIGLOBE | OCN MOBILE ONE | nuromobile | DOCOMO MVNO | DOCOMO ahamo,2026-10-24
+Япония,SoftBank,440,20,SoftBank | Y!mobile | mineo | nuromobile | LINEMO,2026-10-24
+Япония,KDDI (au),440,50,au | UQ mobile,2026-10-24
+Япония,Rakuten Mobile,440,11,Rakuten Mobile(MNO) | DENT,2026-10-24
+США,Verizon,311,480,cellcom | Verizon Wireless | northwestcell | Chat Mobility | Bluegrass Cellular LLC | COX | TracFone | Xfinity Mobile | Spectrum Mobile | Visible | Xfinity Mobile 2.0 | US Mobile | Mediacom Mobile | Tracfone-VZW | Spectrum NaaS,2026-10-24
+Индия,Jio · Андхра-Прадеш,405,854,Reliance Jio,2026-10-24

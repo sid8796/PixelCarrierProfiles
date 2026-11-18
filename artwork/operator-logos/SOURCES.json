@@ -1,0 +1,23 @@
+[
+  {
+    "operator": "a1",
+    "url": "https://a1.by/assets/a1logo.svg",
+    "source_sha256": "e69c4b60ce4938d6e61bfac6cc9a405884773038ae2afe8761f5e44051bc52d2",
+    "filled_paths": 10,
+    "drawable": "operator_a1"
+  },
+  {
+    "operator": "mts-ru",
+    "url": "https://static.mts.ru/mts_rf/images/logo-eco.svg",
+    "source_sha256": "5984b184b2a1aa63097f3bf528831750a5ce7649fe23d795f306cd2582aa5648",
+    "filled_paths": 4,
+    "drawable": "operator_mts_ru"
+  },
+  {
+    "operator": "mts-by",
+    "url": "https://www.mts.by/local/templates/new_design/assets/html/images/general/logo/logo-white.svg",
+    "source_sha256": "1a276747d9eff9aa0277de9409bf2d4b18ea940c60a759f002bec8f2edf43cd0",
+    "filled_paths": 1,
+    "drawable": "operator_mts_by"
+  }
+]

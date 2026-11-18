@@ -1,0 +1,93 @@
+{
+  "id": "megafon_ru",
+  "version": 2,
+  "operator_binding": {
+    "source_mccmnc": "25002",
+    "target_mccmnc": "25002",
+    "carrier_id": 1016
+  },
+  "experimental": true,
+  "status": "experimental_network_untested",
+  "carrier_config": {
+    "carrier_volte_available_bool": true,
+    "carrier_wfc_ims_available_bool": true,
+    "carrier_supports_ss_over_ut_bool": true,
+    "show_4g_for_lte_data_icon_bool": true,
+    "hide_lte_plus_data_icon_bool": false,
+    "imssms.sms_over_ims_supported_bool": true,
+    "carrier_ussd_method_int": 1,
+    "xcap_apn_name_string": "hos",
+    "iwlan.epdg_static_address_string": "epdg.epc.mnc002.mcc250.pub.3gppnetwork.org",
+    "iwlan.epdg_address_priority_int_array": [
+      0,
+      1
+    ]
+  },
+  "apns": [
+    {
+      "name": "Megafon RU Internet",
+      "apn": "internet",
+      "type": [
+        "default",
+        "supl"
+      ],
+      "user": "gdata",
+      "password": "gdata",
+      "authtype": 1,
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6"
+    },
+    {
+      "name": "Megafon RU MMS",
+      "apn": "mms",
+      "type": [
+        "mms"
+      ],
+      "user": "mms",
+      "password": "mms",
+      "authtype": 1,
+      "mmsc": "http://mmsc:8002",
+      "mmsproxy": "10.10.10.10",
+      "mmsport": "8080",
+      "protocol": "IP",
+      "roaming_protocol": "IP"
+    },
+    {
+      "name": "Megafon RU IMS",
+      "apn": "ims",
+      "type": [
+        "ims"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    },
+    {
+      "name": "Megafon RU XCAP",
+      "apn": "hos",
+      "type": [
+        "xcap"
+      ],
+      "protocol": "IPV4V6",
+      "roaming_protocol": "IPV4V6",
+      "user_visible": false
+    }
+  ],
+  "sha256": "5e314596847ce9a4b7133b110e9a765f36903e9201efea1c60bf8b4f6392d5e8",
+  "sources": [
+    "Samsung A576B Megafon_RU imsswitch/globalsettings/imsprofile and SER customer.xml",
+    "Xiaomi OS3.0.308.0.WPARUXM system/product APNs and default_v2.9.7.xml MCC250 MNC02",
+    "Pixel CarrierSettings examples: telekom_de.pb and tmobile_us.pb use static address plus [0,1]",
+    "Android CarrierConfigManager.Iwlan EPDG_ADDRESS_STATIC=0, EPDG_ADDRESS_PLMN=1"
+  ],
+  "decisions": {
+    "internet": "Dual stack and gdata/gdata from Samsung SER. Xiaomi product uses IPv4 and gdata/gdata; Xiaomi system has empty credentials.",
+    "mms": "PAP, IPv4, mms/mms, http://mmsc:8002 and 10.10.10.10:8080 match extracted Samsung/Xiaomi.",
+    "ims": "Dual stack, hidden; no bearer restriction.",
+    "ut": "Samsung PS_ONLY_VOLTEREGIED and APN hos; enable experimental UT flag and route to hos. No XCAP/BSF host/port invented. IMS registration policy left at platform default.",
+    "video": "No override: no explicit Megafon-specific enableServiceVilte or mmtel-video in examined Samsung/Xiaomi settings.",
+    "voicemail": "No override; number not researched for this profile.",
+    "cleanup": "No deletion of existing operator APNs.",
+    "epdg": "Experimental static ePDG from Xiaomi MegaFon MBN; priority [0,1] follows Pixel carrier examples. Roaming-specific address, IPsec authentication, timers and entitlement unchanged."
+  }
+}
